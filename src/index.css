@@ -1,0 +1,26 @@
+#card{
+  width: fit-content;
+  height: 55vh;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  
+}
+#img{
+  background-color: whitesmoke;
+}
+#header{
+  text-align: left;
+  padding: 10px;
+  font-weight: bolder;
+}
+#binary{
+  font-weight: lighter;
+  text-align: left;
+  padding: 10px;
+  margin-top: -13%;
+}
+#empty-div{
+  width: 100%;
+  background-color: rgba(106, 142, 35, 0.761);
+  height: 40vh;
+}
