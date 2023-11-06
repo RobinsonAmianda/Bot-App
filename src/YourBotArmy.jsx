@@ -11,7 +11,7 @@ function YourBotArmy({selectedBot,name,id}) {
   .then(res=>res.json())
   .then(deleted=>{
     const remaining = selectedBot.filter(bot=>bot.id !== id)
-    setData(remaining)
+    setData(remaining);
   })
   }
   return (
