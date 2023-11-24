@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import './App.css'
 import BotCollection  from './BotCollection'
 import YourBotArmy from './YourBotArmy'
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   const[data,setData] = useState([])
@@ -18,14 +17,17 @@ function App() {
     setSelectedBot(bot)
   }
   return (
-    <>
+    <div className = "container bg-dark">
        <YourBotArmy  selectedBot = {selectedBot} /> 
+       <h1 className = "text-center bg-primary text-capital">Bot Collection </h1>
+       <div className = "row">
       {data.map(bot=>(
-        <div>
+        
        <BotCollection avatar_url={bot.avatar_url} name={bot.name} catchphrase={bot.catchphrase} onBotSelect = {handleBotSelect} key={bot.id}/>
+       ))}
+       
     </div>
-    ))} 
-    </>
+    </div>
   )
 }
 
